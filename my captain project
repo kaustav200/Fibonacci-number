@@ -1,0 +1,10 @@
+# get user input for the number of terms in the sequence
+num_terms = int(input("Enter the number of terms: "))
+
+# initialize the first two terms
+a, b = 0, 1
+
+# loop through the number of terms and print each term
+for i in range(num_terms):
+    print(a)
+    a, b = b, a + b
